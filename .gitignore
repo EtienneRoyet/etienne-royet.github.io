@@ -1,3 +1,6 @@
 # Fichiers à ignorer
 .DS_Store
 Thumbs.db
+
+# Contenu source du portfolio (privé)
+portfolio-content.md

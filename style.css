@@ -391,7 +391,6 @@ main { display: block; }
   border: 1px solid var(--border-soft);
   border-radius: 8px;
   overflow: hidden;
-  max-width: 820px;
 }
 
 .meta-item {
@@ -414,10 +413,14 @@ main { display: block; }
   font-family: var(--font-mono);
   font-size: 13px;
   color: var(--text);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
+
+/* Valeur sur plusieurs lignes : une info par ligne, jamais de mot coupé */
+.meta-line { display: block; }
+
+.meta-item dd .dot { margin-right: 0.4rem; }
 
 .hero-cta {
   display: flex;
